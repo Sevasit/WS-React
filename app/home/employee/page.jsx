@@ -29,11 +29,11 @@ function Employee() {
   console.log(employee);
 
   return (
-    <div className="w-full bg-white h-screen">
+    <div className="w-full bg-slate-50 h-screen">
       <div className="overflow-y-auto w-full h-full">
-        <table className="table table-pin-rows table-lg table-pin-cols font-medium text-lg">
+        <table className="table table-pin-rows table-lg table-pin-cols">
           <thead>
-            <tr className=" bg-slate-300 text-xl text-black">
+            <tr className=" bg-slate-800 text-xl text-white">
               <td className="">No</td>
               <td className="">Name</td>
               <td className="">Job</td>
@@ -42,10 +42,10 @@ function Employee() {
               <td className="">Department</td>
             </tr>
           </thead>
-          <tbody className=" text-slate-500">
+          <tbody className=" text-blue-700 font-medium">
             {employee.map((employee) => (
               <tr
-                className="hover:bg-slate-200 duration-500"
+                className="hover:bg-slate-100 hover:text-red-500 duration-200"
                 key={employee.empNo}>
                 <td>{employee.empNo == null ? "null" : employee.empNo}</td>
                 <td>{employee.ename == null ? "null" : employee.ename}</td>

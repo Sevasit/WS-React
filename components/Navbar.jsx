@@ -19,7 +19,7 @@ const Navbar = () => {
     router.push("/");
   };
   return (
-    <div className="bg-gradient-to-r from-cyan-500/100 to-blue-500 w-[300px] h-screen flex flex-col gap-5 items-center border-r-2 border-black py-5">
+    <div className=" bg-blue-700 w-[300px] h-screen flex flex-col gap-5 items-center border-r-2 border-black py-5">
       <Image
         src={protoss}
         alt="Protoss Technology"
@@ -27,41 +27,41 @@ const Navbar = () => {
       />
       <Link
         href="/home"
-        className=" bg-gradient-to-r from-cyan-500/100 to-blue-500 font-semibold text-black hover:text-white duration-300 hover:bg-red-600 h-10 mt-5 flex w-full">
-        <div className="flex gap-1 justify-center items-center ml-3">
-          <ImHome size={20} />
+        className=" bg-blue-700 font-semibold text-black hover:text-white duration-300 h-10 mt-5 flex w-full">
+        <div className="flex gap-3 justify-center items-center ml-3">
+          <ImHome size={25} />
           <button type="submit">Home</button>
         </div>
       </Link>
       <Link
         href="/home/employee"
-        className=" bg-gradient-to-r from-cyan-500/100 to-blue-500 font-semibold text-black hover:text-white hover:bg-sky-400 duration-300 h-10 mt-5 flex w-full">
-        <div className="flex gap-1 justify-center items-center ml-3">
-          <ImUsers size={20} />
+        className=" bg-blue-700 font-semibold text-black hover:text-white  duration-300 h-10 mt-5 flex w-full">
+        <div className="flex gap-3 justify-center items-center ml-3">
+          <ImUsers size={25} />
           <button type="submit">Employees</button>
         </div>
       </Link>
       <Link
         href="/home/department"
-        className=" bg-gradient-to-r from-cyan-500/100 to-blue-500 font-semibold text-black hover:text-white hover:bg-sky-400 duration-300 h-10 mt-5 flex w-full">
-        <div className="flex gap-1 justify-center items-center ml-3">
-          <ImBriefcase size={20} />
+        className=" bg-blue-700 font-semibold text-black hover:text-white  duration-300 h-10 mt-5 flex w-full">
+        <div className="flex gap-3 justify-center items-center ml-3">
+          <ImBriefcase size={25} />
           <button type="submit">Department</button>
         </div>
       </Link>
       <Link
         href="/profile"
-        className=" bg-gradient-to-r from-cyan-500/100 to-blue-500 font-semibold text-black hover:text-white hover:bg-sky-400 duration-300 h-10 mt-5 flex w-full">
-        <div className="flex gap-1 justify-center items-center ml-3">
-          <ImUserTie size={20} />
+        className=" bg-blue-700 font-semibold text-black hover:text-white  duration-300 h-10 mt-5 flex w-full">
+        <div className="flex gap-3 justify-center items-center ml-3">
+          <ImUserTie size={25} />
           <button type="submit">Profile</button>
         </div>
       </Link>
       <div
         onClick={logout}
-        className="bg-gradient-to-r from-cyan-500/100 to-blue-500 font-semibold text-black hover:text-white hover:bg-sky-400 duration-300 h-10 mt-5 flex w-full">
-        <div className="flex gap-1 justify-center items-center ml-3">
-          <ImReply size={20} />
+        className="bg-blue-700 font-semibold text-black hover:text-white  duration-300 h-10 mt-5 flex w-full">
+        <div className="flex gap-3 justify-center items-center ml-3">
+          <ImReply size={25} />
           <button type="submit">Logout</button>
         </div>
       </div>

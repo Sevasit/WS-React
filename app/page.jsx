@@ -22,6 +22,10 @@ export default function Home() {
 
   useEffect(() => {
     setInfo(JSON.parse(localStorage.getItem("infoUser")));
+    const auth = localStorage.getItem("auth");
+    if (auth !== false || auth !== null) {
+      router.push("/profile");
+    }
   }, []);
 
   const login = () => {
